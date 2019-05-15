@@ -1,0 +1,33 @@
+h1 {
+  color: $white;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+h2 {
+}
+
+h3 {
+  color: $mediumBlue;
+  font-size: 24px;
+}
+
+h4 {
+  color: #999;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #444;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+a {
+  color: $primaryBlue;
+  text-decoration: none;
+  font-size: 14px;
+}

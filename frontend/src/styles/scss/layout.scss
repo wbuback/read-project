@@ -1,0 +1,135 @@
+@import 'variables';
+
+.barra-topo {
+  background: $darkBlue;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+// .app-container {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   align-items: stretch;
+//   width: 100%;
+//   box-sizing: content-box;
+// }
+
+// .col {
+//   //width: (100% / 3);
+// }
+
+.item-publicacao {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba($darkBlue, 0.08);
+  overflow: hidden;
+  margin: 15px 0;
+
+  .img-resumo {
+    width: 100%;
+  }
+
+  .cabecalho-resumo {
+    padding: 20px;
+    position: relative;
+
+    .categoria-resumo {
+      background: $primaryBlue;
+      position: absolute;
+      top: -20px;
+      right: 10px;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 13px;
+    }
+  }
+
+  .rodape-resumo {
+    background: $lightBlue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: $mediumBlue;
+
+    .coment-vote {
+      font-size: 14px;
+    }
+  }
+}
+
+.barra-categorias {
+  padding: 20px 20px 10px;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      border: 1px solid $mediumBlue;
+      padding: 5px 15px;
+      font-size: 13px;
+      color: $mediumBlue;
+      border-radius: 15px;
+      line-height: 15px;
+      transition: all ease-in-out 0.3s;
+
+      &:hover {
+        background: $mediumBlue;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .btn-new-post {
+    float: right !important;
+  }
+}
+
+.btn-vote {
+  font-size: 25px;
+  line-height: 0;
+  padding-left: 5px;
+  background: #fff;
+  // margin-top: 10px;
+  display: inline-block;
+
+  i {
+    line-height: 0;
+  }
+}
+
+.fa-heart {
+  color: red;
+  margin-left: 10px;
+}
+.read-more {
+  border: 1px solid #005b96;
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    background: #005b96;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.title-details {
+  margin-top: 20px;
+  border-left: 5px solid #005b96;
+  padding-left: 10px;
+  color: #005b96;
+}
