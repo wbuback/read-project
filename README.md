@@ -11,5 +11,9 @@ Install and start the frontend server:
 - npm start
 
 ## API Server
+In another terminal window, install and start the api-server:
+
+- npm install
+- node server
 
 Information about the API server and how to use it can be found in its [README file](api-server/README.md).
