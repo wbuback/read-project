@@ -44,6 +44,9 @@ class PostDetail extends Component {
           <h2 className="title-details">{title}</h2>
           <small>By {author} at </small>
           <small>{dateFormatBrazil(timestamp)}</small>
+          <button className="delete-post">
+            <i className="fa fa-trash" /> delete
+          </button>
         </div>
         <div className="body-post">
           <p>{body}</p>
