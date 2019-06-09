@@ -41,12 +41,12 @@ class PostDetail extends Component {
     return (
       <div className="container">
         <div className="header-post">
-          <h2 className="title-details">{title}</h2>
-          <small>By {author} at </small>
-          <small>{dateFormatBrazil(timestamp)}</small>
           <button className="delete-post">
             <i className="fa fa-trash" /> delete
           </button>
+          <h2 className="title-details">{title}</h2>
+          <small>By {author} at </small>
+          <small>{dateFormatBrazil(timestamp)}</small>
         </div>
         <div className="body-post">
           <p>{body}</p>
