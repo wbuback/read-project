@@ -53,6 +53,14 @@ class PostDetail extends Component {
             <i className="far fa-comments" /> {commentCount}
             <i className="far fa-heart" /> {voteScore}
           </div>
+          <div>
+            <button onClick={this.voteUp} className="btn-vote">
+              <i className="fas fa-caret-up" /> Vote Up
+            </button>
+            <button onClick={this.voteDown} className="btn-vote">
+              <i className="fas fa-caret-down" /> Vote Down
+            </button>
+          </div>
         </div>
       </div>
     );
