@@ -12,7 +12,7 @@ const activeStyle = 'btn btn-danger mr-2';
 
 class Filter extends Component {
   state = {
-    active: this.props.filter,
+    active: this.props.filter
   };
 
   componentDidMount() {
@@ -25,7 +25,7 @@ class Filter extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentDidUpdate(nextProps) {
     const nextFilters = nextProps.filters;
     const thisFilters = this.props.filters;
     if (thisFilters.length === 0 && nextFilters.length !== 0) {
@@ -35,11 +35,12 @@ class Filter extends Component {
     }
   }
 
-  styleSelector = filter => (this.state.active === filter ? activeStyle : defaultStyle);
+  styleSelector = filter =>
+    this.state.active === filter ? activeStyle : defaultStyle;
 
   clickHandler = filter => {
     this.setState({
-      active: filter,
+      active: filter
     });
   };
 
@@ -60,7 +61,12 @@ class Filter extends Component {
 
     return (
       <div className="barra-categorias">
-        <Link className={this.styleSelector('all')} to="/" style={btnWidth} onClick={() => this.clickHandler('all')}>
+        <Link
+          className={this.styleSelector('all')}
+          to="/"
+          style={btnWidth}
+          onClick={() => this.clickHandler('all')}
+        >
           All
         </Link>
         {renderLinks}
@@ -71,18 +77,21 @@ class Filter extends Component {
 }
 
 Filter.defaultProps = {
-  filter: 'all',
+  filter: 'all'
 };
 
 Filter.propTypes = {
   filters: PropTypes.array.isRequired,
   filter: PropTypes.string,
   getAllCategories: PropTypes.func.isRequired,
-  getPostsByCategory: PropTypes.func.isRequired,
+  getPostsByCategory: PropTypes.func.isRequired
 };
 
 const mapStateToProps = ({ categories }) => ({
-  filters: categories,
+  filters: categories
 });
 
-export default connect(mapStateToProps, { getAllCategories, getPostsByCategory })(Filter);
+export default connect(
+  mapStateToProps,
+  { getAllCategories, getPostsByCategory }
+)(Filter);

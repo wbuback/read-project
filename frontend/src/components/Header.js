@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import NewPostButton from './NewPostButton';
 import { Link } from 'react-router-dom';
 
 const Header = ({ title }) => (
@@ -14,7 +13,7 @@ const Header = ({ title }) => (
 );
 
 Header.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 };
 
 export default Header;

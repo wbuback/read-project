@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Filter from './Filter';
-import NewPostButton from './NewPostButton';
 import RadioForSort from './RadioForSort';
 import Posts from './Posts';
 import { getSortedPosts } from '../utils';
@@ -17,14 +16,14 @@ const PostsContainer = ({ filter, sortBy, posts, changeSortBy }) => (
 );
 
 PostsContainer.defaultProps = {
-  filter: undefined,
+  filter: undefined
 };
 
 PostsContainer.propTypes = {
   sortBy: PropTypes.oneOf(['date', 'score']).isRequired,
   posts: PropTypes.array.isRequired,
   changeSortBy: PropTypes.func.isRequired,
-  filter: PropTypes.string,
+  filter: PropTypes.string
 };
 
 export default PostsContainer;

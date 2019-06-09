@@ -7,14 +7,17 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #ebf4f6;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 .barra-topo {
@@ -156,6 +159,22 @@ a {
   color: #6497b1;
   text-decoration: none;
   font-size: 14px;
+}
+
+.delete-post {
+  background: red;
+  padding: 10px 20px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delete-post:hover {
+  background: rgb(201, 3, 3);
 }
 
 /*# sourceMappingURL=main.css.map */
