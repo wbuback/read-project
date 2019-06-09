@@ -41,7 +41,7 @@ class PostDetail extends Component {
     return (
       <div className="container">
         <div className="header-post">
-          <button className="delete-post">
+          <button className="delete-post" onClick={this.deletePost}>
             <i className="fa fa-trash" /> delete
           </button>
           <h2 className="title-details">{title}</h2>
